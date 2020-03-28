@@ -18,6 +18,8 @@ RUN wget -O - https://github.com/novnc/noVNC/archive/v1.1.0.tar.gz | tar -xzv -C
 RUN wget -O - https://github.com/novnc/websockify/archive/v0.9.0.tar.gz | tar -xzv -C /root/ && mv /root/websockify-0.9.0 /root/novnc/utils/websockify
 
 RUN apt-get -y install sweethome3d sweethome3d-furniture sweethome3d-furniture-editor sweethome3d-textures-editor
+RUN apt-get -y install tigervnc-standalone-server 
+RUN apt-get -y install vim
 #RUN apt-get -qqy autoclean && rm -rf /tmp/* /var/tmp/*
 
 #USER 1000:1000
