@@ -3,3 +3,5 @@ app:
     image: sweethome3d
     ports:
     - 8088:8080
+    volumes:
+    - "./files:/files"
