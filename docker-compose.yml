@@ -1,5 +1,5 @@
 app:
-    image: sweethome3d
+    image: asdlfkj31h/sweethome3d:0.1
     ports:
     - 8088:8080
     volumes:
