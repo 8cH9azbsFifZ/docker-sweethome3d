@@ -20,8 +20,8 @@ RUN wget -O - https://github.com/novnc/websockify/archive/v0.9.0.tar.gz | tar -x
 RUN apt-get -y install sweethome3d sweethome3d-furniture sweethome3d-furniture-editor sweethome3d-textures-editor
 ADD sweethome3d /usr/bin
 RUN apt-get -qqy autoclean && rm -rf /tmp/* /var/tmp/*
-
-#USER 1000:1000
+RUN chmod -R oag+rwx /var/log
+USER 1000:1000
 
 EXPOSE 8080
 
