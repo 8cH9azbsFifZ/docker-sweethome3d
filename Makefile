@@ -1,4 +1,4 @@
-VER=0.2
+VER=0.3
 build:
 	docker build . -t sweethome3d -t asdlfkj31h/sweethome3d:${VER} -t asdlfkj31h/sweethome3d:latest
 
